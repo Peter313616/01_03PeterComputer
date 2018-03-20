@@ -1,0 +1,30 @@
+<Window x:Class="_01_03PeterComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01_03PeterComputer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas Background="DarkSlateGray">
+        <Label x:Name="lblTitle"
+               Content="AMD FX 8370 Processor"
+               HorizontalAlignment="Center"
+               Background="SkyBlue" Canvas.Left="10" Canvas.Top="10"/>
+        <Image x:Name="imgComputerParts"
+               Source="https://images-na.ssl-images-amazon.com/images/I/81aAqEzKuDL._SL1500_.jpg"
+               Height="200" Canvas.Left="146.74" Canvas.Top="35.96"/>
+        <Button x:Name="btnforward"
+                Content="Next"
+                Click="btnforward_Click"
+                Background="Orange" Canvas.Left="418.673" Canvas.Top="255.32" Height="40" Width="80.452"/>
+        <Button x:Name="btnbackwards"
+                Content="Previous"
+                Click="btnbackwards_Click"
+                Background="Orange" Canvas.Left="18.75" VerticalAlignment="Bottom" Height="40" Width="80" Canvas.Top="255.32"/>
+        <Button x:Name="msgInfo" 
+                Content="Click for link" 
+                Click="msgInfo_Click"
+                Background="Orange" RenderTransformOrigin="0.488,0.411" Height="28.71" Width="136.74" Canvas.Left="181.625" Canvas.Top="280.29"/>
+    </Canvas>
+</Window>
